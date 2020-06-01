@@ -11,7 +11,7 @@ app.get("/", async (req, res) => {
     return res.send("Not url provided");
   } else {
     try {
-      console.log(req.query.url);
+      console.log(url);
 
       const browser = await puppeteer.launch();
 
